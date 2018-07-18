@@ -14,6 +14,10 @@
 		22789B2820FC5300007F1542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22789B2620FC5300007F1542 /* LaunchScreen.storyboard */; };
 		22789B3E20FC569B007F1542 /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22789B3D20FC569B007F1542 /* ToDoItemTests.swift */; };
 		22789B4020FC57DE007F1542 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22789B3F20FC57DE007F1542 /* ToDoItem.swift */; };
+		22A4E12320FFA74B0081D7B3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4E12220FFA74B0081D7B3 /* Location.swift */; };
+		22A4E12520FFA96B0081D7B3 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4E12420FFA96B0081D7B3 /* LocationTests.swift */; };
+		22A4E12720FFAC4D0081D7B3 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4E12620FFAC4D0081D7B3 /* ItemManagerTests.swift */; };
+		22A4E12920FFACD70081D7B3 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4E12820FFACD70081D7B3 /* ItemManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		22789B3420FC5300007F1542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22789B3D20FC569B007F1542 /* ToDoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
 		22789B3F20FC57DE007F1542 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		22A4E12220FFA74B0081D7B3 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		22A4E12420FFA96B0081D7B3 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
+		22A4E12620FFAC4D0081D7B3 /* ItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
+		22A4E12820FFACD70081D7B3 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,8 @@
 				22789B2620FC5300007F1542 /* LaunchScreen.storyboard */,
 				22789B2920FC5300007F1542 /* Info.plist */,
 				22789B3F20FC57DE007F1542 /* ToDoItem.swift */,
+				22A4E12220FFA74B0081D7B3 /* Location.swift */,
+				22A4E12820FFACD70081D7B3 /* ItemManager.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -94,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				22789B3D20FC569B007F1542 /* ToDoItemTests.swift */,
+				22A4E12620FFAC4D0081D7B3 /* ItemManagerTests.swift */,
+				22A4E12420FFA96B0081D7B3 /* LocationTests.swift */,
 				22789B3420FC5300007F1542 /* Info.plist */,
 			);
 			path = ToDoTests;
@@ -201,7 +213,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				22789B2020FC52FF007F1542 /* ViewController.swift in Sources */,
+				22A4E12920FFACD70081D7B3 /* ItemManager.swift in Sources */,
 				22789B1E20FC52FF007F1542 /* AppDelegate.swift in Sources */,
+				22A4E12320FFA74B0081D7B3 /* Location.swift in Sources */,
 				22789B4020FC57DE007F1542 /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A4E12720FFAC4D0081D7B3 /* ItemManagerTests.swift in Sources */,
+				22A4E12520FFA96B0081D7B3 /* LocationTests.swift in Sources */,
 				22789B3E20FC569B007F1542 /* ToDoItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
