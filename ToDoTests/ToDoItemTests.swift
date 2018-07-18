@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import CoreLocation
 @testable import ToDo
 
 class ToDoItemTests: XCTestCase {
@@ -44,5 +45,12 @@ class ToDoItemTests: XCTestCase {
         let item = ToDoItem(title: "", location: location)
         
         XCTAssertEqual(item.location?.name, location.name, "should set location")
+    }
+    
+    func test_EqualItems_AreEqual() {
+        let first = ToDoItem(title: "Foo")
+        let second = ToDoItem(title: "Foo")
+        
+        XCTAssertEqual(first, second)
     }
 }
