@@ -13,6 +13,9 @@
 		22789B2820FC5300007F1542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22789B2620FC5300007F1542 /* LaunchScreen.storyboard */; };
 		22789B3E20FC569B007F1542 /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22789B3D20FC569B007F1542 /* ToDoItemTests.swift */; };
 		22789B4020FC57DE007F1542 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22789B3F20FC57DE007F1542 /* ToDoItem.swift */; };
+		2293B5B021044D4C0003A768 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293B5AF21044D4C0003A768 /* DetailViewControllerTests.swift */; };
+		2293B5B221044E040003A768 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293B5B121044E040003A768 /* DetailViewController.swift */; };
+		2293B5B5210452B40003A768 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2293B5B4210452B40003A768 /* MapKit.framework */; };
 		22A4E12320FFA74B0081D7B3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4E12220FFA74B0081D7B3 /* Location.swift */; };
 		22A4E12520FFA96B0081D7B3 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4E12420FFA96B0081D7B3 /* LocationTests.swift */; };
 		22A4E12720FFAC4D0081D7B3 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4E12620FFAC4D0081D7B3 /* ItemManagerTests.swift */; };
@@ -46,6 +49,9 @@
 		22789B3420FC5300007F1542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22789B3D20FC569B007F1542 /* ToDoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
 		22789B3F20FC57DE007F1542 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		2293B5AF21044D4C0003A768 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		2293B5B121044E040003A768 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2293B5B4210452B40003A768 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		22A4E12220FFA74B0081D7B3 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		22A4E12420FFA96B0081D7B3 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		22A4E12620FFAC4D0081D7B3 /* ItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
@@ -63,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2293B5B5210452B40003A768 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,7 @@
 				22789B1C20FC52FF007F1542 /* ToDo */,
 				22789B3120FC5300007F1542 /* ToDoTests */,
 				22789B1B20FC52FF007F1542 /* Products */,
+				2293B5B3210452B40003A768 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				22789B1D20FC52FF007F1542 /* AppDelegate.swift */,
-				22D654A820FFE25E0004D41F /* ItemListViewController.swift */,
+				2293B5AE21044D280003A768 /* Controller */,
 				22789B2120FC52FF007F1542 /* Main.storyboard */,
 				22789B2420FC5300007F1542 /* Assets.xcassets */,
 				22789B2620FC5300007F1542 /* LaunchScreen.storyboard */,
@@ -113,13 +121,39 @@
 		22789B3120FC5300007F1542 /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
-				22D654A620FFE1EC0004D41F /* ItemListViewControllerTests.swift */,
+				2293B5AD21044D050003A768 /* Controller */,
 				22E78A4D20FFF27000F674EA /* ItemListDataProviderTests.swift */,
 				22BBDD0B2104017A008B197A /* ItemCellTests.swift */,
 				22D654A520FFE18E0004D41F /* Model */,
 				22789B3420FC5300007F1542 /* Info.plist */,
 			);
 			path = ToDoTests;
+			sourceTree = "<group>";
+		};
+		2293B5AD21044D050003A768 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22D654A620FFE1EC0004D41F /* ItemListViewControllerTests.swift */,
+				2293B5AF21044D4C0003A768 /* DetailViewControllerTests.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2293B5AE21044D280003A768 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22D654A820FFE25E0004D41F /* ItemListViewController.swift */,
+				2293B5B121044E040003A768 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2293B5B3210452B40003A768 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2293B5B4210452B40003A768 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		22D654A420FFE15E0004D41F /* Model */ = {
@@ -192,6 +226,11 @@
 				TargetAttributes = {
 					22789B1920FC52FF007F1542 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					22789B2D20FC5300007F1542 = {
 						CreatedOnToolsVersion = 10.0;
@@ -250,6 +289,7 @@
 				22E78A5020FFFBD700F674EA /* ItemCell.swift in Sources */,
 				22789B4020FC57DE007F1542 /* ToDoItem.swift in Sources */,
 				22D654A920FFE25E0004D41F /* ItemListViewController.swift in Sources */,
+				2293B5B221044E040003A768 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +303,7 @@
 				22A4E12520FFA96B0081D7B3 /* LocationTests.swift in Sources */,
 				22789B3E20FC569B007F1542 /* ToDoItemTests.swift in Sources */,
 				22D654A720FFE1EC0004D41F /* ItemListViewControllerTests.swift in Sources */,
+				2293B5B021044D4C0003A768 /* DetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
