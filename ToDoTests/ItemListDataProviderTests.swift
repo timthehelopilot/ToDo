@@ -177,7 +177,7 @@ extension ItemListDataProviderTests {
     class MockItemCell: ItemCell {
         var catchedItem: ToDoItem?
         
-        override func configureCell(with item: ToDoItem) {
+        override func configureCell(with item: ToDoItem, checked: Bool = false) {
             catchedItem = item
         }
     }
