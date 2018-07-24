@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import CoreLocation
 @testable import ToDo
 
 class DetailViewControllerTests: XCTestCase {
@@ -54,5 +55,35 @@ class DetailViewControllerTests: XCTestCase {
         let mapViewIsSubview = sut.mapView.isDescendant(of: sut.view)
         
         XCTAssertTrue(mapViewIsSubview)
+    }
+    
+    func test_SettingItemInfo_SetsTextToLabels() {
+        let coordinate = CLLocationCoordinate2DMake(51.2277, 6.773500000000034)
+        
+        let location = Location(name: "Foo", coordinate: coordinate)
+        let item = ToDoItem(title: "Bar", itemDescription: "Baz", timeStamp: 1456150025, location: location)
+        
+        let itemManager = ItemManager()
+        itemManager.add(item)
+        
+        sut.itemInfo = (itemManager, 0)
+        sut.beginAppearanceTransition(true, animated: true)
+        sut.endAppearanceTransition()
+        XCTAssertEqual(sut.titleLabel.text, "Bar")
+        XCTAssertEqual(sut.dateLabel.text, "02/22/2016")
+        XCTAssertEqual(sut.locationLabel.text, "Foo")
+        XCTAssertEqual(sut.descriptionLabel.text, "Baz")
+        XCTAssertEqual(sut.mapView.centerCoordinate, coordinate)
+    }
+    
+    func test_CheckItem_ChecksItemInItemManager() {
+        let itemManager  = ItemManager()
+        itemManager.add(ToDoItem(title: "Foo"))
+        
+        sut.itemInfo = (itemManager, 0)
+        sut.checkItem()
+        
+        XCTAssertEqual(itemManager.toDoCount, 0)
+        XCTAssertEqual(itemManager.doneCount, 1)
     }
 }

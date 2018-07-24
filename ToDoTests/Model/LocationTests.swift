@@ -33,5 +33,12 @@ class LocationTests: XCTestCase {
         
         XCTAssertEqual(location.name, "Foo")
     }
+    
+    func test_CLLocationEquality() {
+        let locationOne = CLLocationCoordinate2D(latitude: 36.45671, longitude: 36.45675)
+        let locationTwo = CLLocationCoordinate2D(latitude: 36.45671, longitude: 36.45675)
+        
+        XCTAssertEqual(locationOne, locationTwo)
+    }
 
 }
