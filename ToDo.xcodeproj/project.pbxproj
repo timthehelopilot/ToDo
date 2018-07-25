@@ -26,6 +26,8 @@
 		22D654AB20FFE7860004D41F /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D654AA20FFE7860004D41F /* ItemListDataProvider.swift */; };
 		22E78A4E20FFF27000F674EA /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E78A4D20FFF27000F674EA /* ItemListDataProviderTests.swift */; };
 		22E78A5020FFFBD700F674EA /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E78A4F20FFFBD700F674EA /* ItemCell.swift */; };
+		952227F5210831C300190A3D /* InputViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952227F4210831C300190A3D /* InputViewControllerTests.swift */; };
+		952227F72108327100190A3D /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952227F62108327100190A3D /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		22D654AA20FFE7860004D41F /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 		22E78A4D20FFF27000F674EA /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
 		22E78A4F20FFFBD700F674EA /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		952227F4210831C300190A3D /* InputViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewControllerTests.swift; sourceTree = "<group>"; };
+		952227F62108327100190A3D /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 			children = (
 				22D654A620FFE1EC0004D41F /* ItemListViewControllerTests.swift */,
 				2293B5AF21044D4C0003A768 /* DetailViewControllerTests.swift */,
+				952227F4210831C300190A3D /* InputViewControllerTests.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			children = (
 				22D654A820FFE25E0004D41F /* ItemListViewController.swift */,
 				2293B5B121044E040003A768 /* DetailViewController.swift */,
+				952227F62108327100190A3D /* InputViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 					};
 					22789B2D20FC5300007F1542 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						TestTargetID = 22789B1920FC52FF007F1542;
 					};
 				};
@@ -282,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				952227F72108327100190A3D /* InputViewController.swift in Sources */,
 				22A4E12920FFACD70081D7B3 /* ItemManager.swift in Sources */,
 				22D654AB20FFE7860004D41F /* ItemListDataProvider.swift in Sources */,
 				22789B1E20FC52FF007F1542 /* AppDelegate.swift in Sources */,
@@ -300,6 +308,7 @@
 				22BBDD0C2104017A008B197A /* ItemCellTests.swift in Sources */,
 				22E78A4E20FFF27000F674EA /* ItemListDataProviderTests.swift in Sources */,
 				22A4E12720FFAC4D0081D7B3 /* ItemManagerTests.swift in Sources */,
+				952227F5210831C300190A3D /* InputViewControllerTests.swift in Sources */,
 				22A4E12520FFA96B0081D7B3 /* LocationTests.swift in Sources */,
 				22789B3E20FC569B007F1542 /* ToDoItemTests.swift in Sources */,
 				22D654A720FFE1EC0004D41F /* ItemListViewControllerTests.swift in Sources */,
@@ -494,6 +503,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AQF45K48EJ;
 				INFOPLIST_FILE = ToDoTests/Info.plist;
@@ -504,6 +514,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tim.lee.barrett.jr.ToDoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDo.app/ToDo";
@@ -515,6 +526,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AQF45K48EJ;
 				INFOPLIST_FILE = ToDoTests/Info.plist;
