@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224846D3210AD1940080E78A /* StoryBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224846D2210AD1940080E78A /* StoryBoardTests.swift */; };
 		22789B1E20FC52FF007F1542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22789B1D20FC52FF007F1542 /* AppDelegate.swift */; };
 		22789B2320FC52FF007F1542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22789B2120FC52FF007F1542 /* Main.storyboard */; };
 		22789B2520FC5300007F1542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22789B2420FC5300007F1542 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		224846D2210AD1940080E78A /* StoryBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardTests.swift; sourceTree = "<group>"; };
 		22789B1A20FC52FF007F1542 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22789B1D20FC52FF007F1542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22789B2220FC52FF007F1542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		224846D0210ACDFF0080E78A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				224846D2210AD1940080E78A /* StoryBoardTests.swift */,
+				22BBDD0B2104017A008B197A /* ItemCellTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		224846D1210ACE0C0080E78A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22E78A4F20FFFBD700F674EA /* ItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		22789B1120FC52FF007F1542 = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +135,7 @@
 				22789B2620FC5300007F1542 /* LaunchScreen.storyboard */,
 				22789B2920FC5300007F1542 /* Info.plist */,
 				22D654A420FFE15E0004D41F /* Model */,
-				22D654AA20FFE7860004D41F /* ItemListDataProvider.swift */,
-				22E78A4F20FFFBD700F674EA /* ItemCell.swift */,
+				224846D1210ACE0C0080E78A /* View */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -126,8 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				2293B5AD21044D050003A768 /* Controller */,
-				22E78A4D20FFF27000F674EA /* ItemListDataProviderTests.swift */,
-				22BBDD0B2104017A008B197A /* ItemCellTests.swift */,
+				224846D0210ACDFF0080E78A /* View */,
 				22D654A520FFE18E0004D41F /* Model */,
 				22789B3420FC5300007F1542 /* Info.plist */,
 			);
@@ -140,6 +157,7 @@
 				22D654A620FFE1EC0004D41F /* ItemListViewControllerTests.swift */,
 				2293B5AF21044D4C0003A768 /* DetailViewControllerTests.swift */,
 				952227F4210831C300190A3D /* InputViewControllerTests.swift */,
+				22E78A4D20FFF27000F674EA /* ItemListDataProviderTests.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -150,6 +168,7 @@
 				22D654A820FFE25E0004D41F /* ItemListViewController.swift */,
 				2293B5B121044E040003A768 /* DetailViewController.swift */,
 				952227F62108327100190A3D /* InputViewController.swift */,
+				22D654AA20FFE7860004D41F /* ItemListDataProvider.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -310,6 +329,7 @@
 				22A4E12720FFAC4D0081D7B3 /* ItemManagerTests.swift in Sources */,
 				952227F5210831C300190A3D /* InputViewControllerTests.swift in Sources */,
 				22A4E12520FFA96B0081D7B3 /* LocationTests.swift in Sources */,
+				224846D3210AD1940080E78A /* StoryBoardTests.swift in Sources */,
 				22789B3E20FC569B007F1542 /* ToDoItemTests.swift in Sources */,
 				22D654A720FFE1EC0004D41F /* ItemListViewControllerTests.swift in Sources */,
 				2293B5B021044D4C0003A768 /* DetailViewControllerTests.swift in Sources */,
